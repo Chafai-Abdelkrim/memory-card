@@ -30,6 +30,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Scoreboard score={score} highestScore={highestScore} />
+
     </div>
   );
 }
