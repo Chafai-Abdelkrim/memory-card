@@ -31,7 +31,11 @@ function App() {
     <div className="App">
       <Header />
       <Scoreboard score={score} highestScore={highestScore} />
-
+      {selected.length === catArr.length ? (
+        <GameOver resetGame={resetGame} />
+      ) : (
+        <Cards cats={cats} selected={selected} onSelection={onSelection} />
+      )}
     </div>
   );
 }
