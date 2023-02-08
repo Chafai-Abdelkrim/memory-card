@@ -8,6 +8,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [highestScore, setHighestScore] = useState(0);
 
+
   const resetGame = () => {
     setScore(0);
     setSelected([]);
