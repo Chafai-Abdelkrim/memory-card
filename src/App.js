@@ -36,6 +36,7 @@ function App() {
       ) : (
         <Cards cats={cats} selected={selected} onSelection={onSelection} />
       )}
+      <Footer />
     </div>
   );
 }
