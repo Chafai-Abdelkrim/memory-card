@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-/* font-family: 'Fredoka One', cursive; */
 
 * {
   margin: 0;
@@ -10,38 +9,99 @@
 }
 
 .App {
-    min-height: 100vh;
-    font-family: 'Fredoka One', cursive;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content 1fr;
-    gap: 0.5rem;
-    margin: 0 auto;
+  min-height: 100vh;
+  font-family: 'Fredoka One', cursive;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  gap: 0.5rem;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    font-size: 2.8rem;
-    width: 100%;
-    padding: 2rem 1rem 0 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2.8rem;
+  width: 100%;
+  padding: 2rem 1rem 0 1rem;
 }
 /* scoreboard styling */
 .scoreboard-container {
-    justify-self: center;
-    display: flex;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  justify-self: center;
+  display: flex;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .scoreboard-container p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1.2rem;
-    margin: 0.2rem 0.5rem;
-    background-color: blanchedalmond;
-    border-radius: 100vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  margin: 0.2rem 0.5rem;
+  background-color: blanchedalmond;
+  border-radius: 100vmax;
+  line-height: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* cards area styling */
+.card-container {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1390px;
+  width: 100%;
+  perspective: 2000px;
+  padding: 0 1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 224px;
+  aspect-ratio: 1;
+  background-color: blanchedalmond;
+  padding: 4%;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transform: scale(1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-in-out;
+  will-change: transform;
+}
+@media (hover: hover) and (pointer: fine) {
+  .card:hover,
+  .card:focus-visible {
+      transform: translateY(-1rem);
+  }
+}
+
+.card img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0.8rem;
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+}
+
+.card p {
     line-height: 1;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 4%;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
