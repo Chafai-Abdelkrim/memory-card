@@ -8,6 +8,14 @@
   border: none;
 }
 
+:root {
+  --clr-tiffany-blue: #a9ddd6;
+  --clr-stale-gray: #7a8b99;
+  --clr-cadet-gary: #91adc2;
+  --clr-cool-gray: #9ba0bc;
+  --clr-thistle: #c1b8c8;
+}
+
 .App {
   min-height: 100vh;
   font-family: 'Fredoka One', cursive;
@@ -16,6 +24,7 @@
   grid-template-rows: min-content min-content 1fr;
   gap: 0.5rem;
   margin: 0 auto;
+  background-color: var(--clr-thistle);
 }
 
 .header {
@@ -24,6 +33,8 @@
   font-size: 2.8rem;
   width: 100%;
   padding: 2rem 1rem 0 1rem;
+  letter-spacing: 5px;
+  color: var(--clr-tiffany-blue);
 }
 /* scoreboard styling */
 .scoreboard-container {
@@ -39,7 +50,7 @@
   align-items: center;
   padding: 0.5rem 1.2rem;
   margin: 0.2rem 0.5rem;
-  background-color: blanchedalmond;
+  background-color: var(--clr-stale-gray);
   border-radius: 100vmax;
   line-height: 1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -64,10 +75,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   width: 100%;
   max-width: 224px;
   aspect-ratio: 1;
-  background-color: blanchedalmond;
+  background-color: var(--clr-cadet-gary);
   padding: 4%;
   border-radius: 1rem;
   cursor: pointer;
@@ -94,9 +106,8 @@
   background-image: url(./images/background-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
   border-radius: 1rem;
-  border: 0.25rem solid black;
+  border: 0.25rem solid var(--clr-tiffany-blue);
   z-index: -1;
   transform: rotateY(0.5turn);
   backface-visibility: hidden;
@@ -114,18 +125,67 @@
   line-height: 1;
   padding-top: 4%;
 }
-
-@media screen and (max-width: 1000px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* game over modal */
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(0.5rem);
+  z-index: 10;
 }
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: max-content;
+  height: max-content;
+  padding: 1rem;
+  background-color: var(--clr-cool-gray);
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 22pt 5pt var(--clr-tiffany-blue);
+}
+.game-over h2 {
+  font-size: 2.4rem;
+}
+.game-over p {
+  font-size: 1.8rem;
+  margin-bottom: auto;
+  text-align: center;
+}
+.game-over img {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.game-over button {
+  cursor: pointer;
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--clr-cadet-gary);
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+}
+.game-over button:hover,
+.game-over button:focus-visible {
+  outline: none;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.25rem 0.25rem var(--clr-tiffany-blue);
+}
+
 /* footer styles */
 .footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    z-index: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  z-index: 0;
 }
 
 .footer-link {
@@ -133,7 +193,7 @@
   width: 250px;
   height: 70px;
   border-radius: 15px;
-  background-color: ;
+  background-color: transparent;
   align-items: center;
   text-align: center;
   display: flex;
@@ -149,14 +209,14 @@
   transition: 0.5s;
   width: 60px;
   height: 60px;
-  color: ;
+  color: var(--clr-tiffany-blue);
   position: absolute;
   top: 5px;
   right: 90px;
 }
 
 .footer-link p {
-  color: ;
+  color: var(--clr-tiffany-blue);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -183,4 +243,15 @@
   right: 5px;
   height: 90px;
   width: 90px;
+}
+/* media query */
+
+@media screen and (max-width: 1000px) {
+  .header {
+    letter-spacing: 0;
+    font-size: 2.5rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
