@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.23cca313.css",
+    "main.js": "/memory-card/static/js/main.ef444661.js",
+    "static/media/game-over.gif": "/memory-card/static/media/game-over.78c32ad06d2d1944b158.gif",
+    "static/media/bootCat.webp": "/memory-card/static/media/bootCat.1e946f98e11d50548379.webp",
+    "static/media/silly.webp": "/memory-card/static/media/silly.c71d2a07cdfb6c8529a5.webp",
+    "static/media/kingCat.webp": "/memory-card/static/media/kingCat.a7d8671c1e1e243beef6.webp",
+    "static/media/queenCat.webp": "/memory-card/static/media/queenCat.905c29c8fcefd2bdf4d9.webp",
+    "static/media/crying.webp": "/memory-card/static/media/crying.378716e8a3b315a61419.webp",
+    "static/media/musicLover.webp": "/memory-card/static/media/musicLover.2b3024d1a879547ad502.webp",
+    "static/media/surprisedCat.webp": "/memory-card/static/media/surprisedCat.eeca3f837aa418dddaa8.webp",
+    "static/media/huh.webp": "/memory-card/static/media/huh.12f6c34034c13fb1b1c1.webp",
+    "static/media/H2O.webp": "/memory-card/static/media/H2O.dec661493cbac6999012.webp",
+    "static/media/team.webp": "/memory-card/static/media/team.401cd69a1238141a7d71.webp",
+    "static/media/innocent.webp": "/memory-card/static/media/innocent.248c261b8ebcd782a533.webp",
+    "static/media/apology.webp": "/memory-card/static/media/apology.eed41cbce753bfffe840.webp",
+    "static/media/mySlice.webp": "/memory-card/static/media/mySlice.9b15b4b93a9d92c39af6.webp",
+    "static/media/sleepingCat.webp": "/memory-card/static/media/sleepingCat.71d267126095f2f24a21.webp",
+    "static/media/sayHiCat.webp": "/memory-card/static/media/sayHiCat.87e3cdfcc3ba66a4c969.webp",
+    "static/media/otherhalfCat.webp": "/memory-card/static/media/otherhalfCat.7a7d27fea9518bed53ef.webp",
+    "static/media/crabCat.webp": "/memory-card/static/media/crabCat.83f65148daf395a5594a.webp",
+    "static/media/cakeThiefCat.webp": "/memory-card/static/media/cakeThiefCat.533656a743959610c6b2.webp",
+    "static/media/demon.webp": "/memory-card/static/media/demon.4a7591e219878c2fc83c.webp",
+    "static/media/phoneCat.webp": "/memory-card/static/media/phoneCat.1a38f226554ff187cdbb.webp",
+    "static/media/soggedCat.webp": "/memory-card/static/media/soggedCat.61541a12dc06a03eab4c.webp",
+    "index.html": "/memory-card/index.html",
+    "main.23cca313.css.map": "/memory-card/static/css/main.23cca313.css.map",
+    "main.ef444661.js.map": "/memory-card/static/js/main.ef444661.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23cca313.css",
+    "static/js/main.ef444661.js"
+  ]
+}
