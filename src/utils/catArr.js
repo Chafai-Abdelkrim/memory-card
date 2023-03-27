@@ -6,7 +6,7 @@ const images = importAll(
 
 const catArr = images.map((path) => {
   return {
-    name: path.split(/[., /]/)[3],
+    name: path.split(/[., /]/)[4],
     image: path,
   };
 });

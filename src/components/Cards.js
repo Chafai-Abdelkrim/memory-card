@@ -47,20 +47,20 @@ function Cards(props) {
   };
 
   return (
-    <div className='card-container'>
+    <div className="card-container">
       {randomCats.map((obj, index) => (
-        <div 
+        <div
           key={index}
-          className='card'
+          className="card"
           onClick={() => handleClick(obj)}
           style={{ '--bg-image': `url(${cardBacks[index]})` }}
         >
-          <img src={obj.image} alt='' />
+          <img src={obj.image} alt="" />
           <p>{obj.name}</p>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 export default Cards;
